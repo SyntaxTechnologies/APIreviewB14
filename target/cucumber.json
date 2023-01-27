@@ -1,0 +1,271 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "for generating the token before every request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2375078900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a JWT is generated",
+            "match": {
+              "location": "APISteps.GenerateTokenSteps.a_jwt_is_generated()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-27T01:55:06.736Z",
+        "line": 8,
+        "name": "API test case for creating the employee",
+        "description": "",
+        "id": "api-workflow-test;api-test-case-for-creating-the-employee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 996900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a request is prepared for creating an employee",
+            "match": {
+              "location": "APISteps.apiWorkFlow.a_request_is_prepared_for_creating_an_employee()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 482961300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a POST call is made to create an employee",
+            "match": {
+              "location": "APISteps.apiWorkFlow.a_post_call_is_made_to_create_an_employee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24964200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the status code for creating an employee is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 44
+                }
+              ],
+              "location": "APISteps.apiWorkFlow.the_status_code_for_creating_an_employee_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 41001700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the response body contains key \"Message\" and value \"Employee Created\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Message\"",
+                  "offset": 31
+                },
+                {
+                  "val": "\"Employee Created\"",
+                  "offset": 51
+                }
+              ],
+              "location": "APISteps.apiWorkFlow.the_response_body_contains_key_and_value(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13998100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the employee id \"Employee.employee_id\" is stored as global to be used for other request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee.employee_id\"",
+                  "offset": 16
+                }
+              ],
+              "location": "APISteps.apiWorkFlow.the_employee_id_is_stored_as_global_to_be_used_for_other_request(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "for generating the token before every request",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 470239100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a JWT is generated",
+            "match": {
+              "location": "APISteps.GenerateTokenSteps.a_jwt_is_generated()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-27T01:55:09.753Z",
+        "line": 16,
+        "name": "Getting the created employee",
+        "description": "",
+        "id": "api-workflow-test;getting-the-created-employee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11001600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "a request is prepared for getting a created employee",
+            "match": {
+              "location": "APISteps.apiWorkFlow.a_request_is_prepared_for_getting_a_created_employee()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 464601700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "a GET call is made to get this employee",
+            "match": {
+              "location": "APISteps.apiWorkFlow.a_get_call_is_made_to_get_this_employee()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the status code for this emp is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "APISteps.apiWorkFlow.the_status_code_for_this_emp_is(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7998800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the employee id \"employee.employee_id\" should match with global emp id",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"employee.employee_id\"",
+                  "offset": 16
+                }
+              ],
+              "location": "APISteps.apiWorkFlow.the_employee_id_should_match_with_global_emp_id(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8000600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the retrieved data at \"employee\" object should match with the data used for creating the employee",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"employee\"",
+                  "offset": 22
+                }
+              ],
+              "location": "APISteps.apiWorkFlow.the_retrieved_data_at_object_should_match_with_the_data_used_for_creating_the_employee(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "emp_firstname",
+                  "emp_lastname",
+                  "emp_middle_name",
+                  "emp_gender",
+                  "emp_birthday",
+                  "emp_status",
+                  "emp_job_title"
+                ]
+              },
+              {
+                "cells": [
+                  "sara",
+                  "bou",
+                  "ms",
+                  "Female",
+                  "2011-01-12",
+                  "confirmed",
+                  "QA Engineer"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "API workflow test",
+    "description": "",
+    "id": "api-workflow-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/APIWorkflow.feature",
+    "tags": []
+  }
+]

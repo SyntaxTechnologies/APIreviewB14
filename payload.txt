@@ -1,0 +1,9 @@
+{
+  "emp_firstname": "MR",
+  "emp_lastname": "Jaay",
+  "emp_middle_name": "BEEE",
+  "emp_gender": "M",
+  "emp_birthday": "2023-01-20",
+  "emp_status": "Unemploy",
+  "emp_job_title": "noEmployee"
+}
